@@ -20,27 +20,6 @@ public class BoardUtils {
         return 1;
     }
 
-    public static int[][] saisirCoupJoueur(int[][] A) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Saisir coordonnées -> x:y");
-        String s = sc.nextLine();
-
-        int x = 0, y = 0;
-
-        try {
-            x = Integer.parseInt(s.substring(0, 1));
-            y = Integer.parseInt(s.substring(2, 3));
-        } catch (Exception e) {
-            throw new Exception("Error");
-        }
-
-        if (A[x][y] != 0) throw new Exception("Error");
-
-        A[x][y] = 1;
-        System.out.println("Coup Joueur : (" + x + "," + y + ")");
-        return A;
-    }
-
     public static void affichePosition(int[][] A) {
         int i, j;
         for (i = 0; i < A.length; i++) {
@@ -52,6 +31,9 @@ public class BoardUtils {
                         break;
                     case 2:
                         System.out.print("O");
+                        break;
+                    case 3:
+                        System.out.print("A");
                         break;
                     default:
                         System.out.print(" ");
@@ -69,5 +51,16 @@ public class BoardUtils {
             for (j = 0; j < M[i].length; j++)
                 T[i][j] = M[i][j];
         return T;
+    }
+
+    public static boolean saisirCoup(int[][] M, Action action, int joueur){
+        int x = action.getX(), y = action.getY();
+
+        if (M[x][y] != 0){
+            System.out.println("Case déjà occupée");
+            return false;
+        }else  M[x][y] = joueur;
+
+        return true;
     }
 }

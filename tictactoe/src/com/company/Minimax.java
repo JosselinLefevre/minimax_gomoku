@@ -11,11 +11,6 @@ public class Minimax {
         return a;
     }
 
-    //TODO : implementer fonction utilite
-    private static int utilite(Abr a){
-        return 0;
-    }
-
     private static int tourMax(Abr a){
         if (!a.hasChildren()) return a.getUtilite();
         int u = -1001;
