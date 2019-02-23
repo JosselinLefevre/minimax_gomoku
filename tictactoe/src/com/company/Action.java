@@ -1,14 +1,20 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Action {
     private int x;
     private int y;
+    // Liste de toutes les actions jouées depuis le début de la partie
+    public static ArrayList<Action> PLAYED_ACTIONS;
 
+    // Constructeur
     public Action(int x, int y){
         this.x = x;
         this.y = y;
     }
 
+    // Accesseurs
     public int getY() {
         return y;
     }
@@ -17,12 +23,12 @@ public class Action {
         return x;
     }
 
+    /**
+     * @param N la Position
+     * @return true si les coordonnées de l'action sont possible pour la position, false sisnon.
+     */
     public boolean possible(int N){
         return this.x >= 0 && this.x < N && this.y >= 0 && this.y < N;
-    }
-
-    public boolean libreEtPossible(int[][] M){
-        return possible(M.length) && M[this.x][this.y] == 0;
     }
 
     @Override

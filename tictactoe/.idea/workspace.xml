@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e5899448-ee60-4d58-935d-5b84e855f5f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/com/company/Abr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/com/company/Abr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/com/company/Action.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/com/company/Action.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/com/company/BoardUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/com/company/BoardUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/tictactoe/com/company/Minimax.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/tictactoe/com/company/Minimax.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Abr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Abr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ActionScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ActionScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/BoardUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BoardUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Minimax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Minimax.java" afterDir="false" />
@@ -21,28 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-322">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="105">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Abr.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#Abr#0;class#Abr#0" />
-                <element signature="method#Abr#2;class#Abr#0" />
-                <element signature="n#!!block;n#hasChildren#0;n#Abr#0" />
-                <element signature="method#setChildren#0;class#Abr#0" />
-                <element signature="method#dispAbr#0;class#Abr#0" />
-                <element signature="method#casesEligibles#0;class#Abr#0" />
-                <element signature="method#align#0;class#Abr#0" />
-                <element signature="method#gagne#0;class#Abr#0" />
-              </folding>
+            <state relative-caret-position="-1043">
+              <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -50,8 +45,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/ActionScanner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="247">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding>
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/BoardUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="855">
+              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+              <folding>
+                <element signature="method#copyBoard#0;class#BoardUtils#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,15 +70,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Action.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
+            <state relative-caret-position="105">
+              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
               <folding>
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#420#421#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
+                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#644#645#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,17 +85,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Minimax.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
+            <state relative-caret-position="90">
+              <caret line="6" column="87" selection-start-line="6" selection-start-column="87" selection-end-line="6" selection-end-column="87" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/BoardUtils.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Abr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+            <state relative-caret-position="422">
+              <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+              <folding>
+                <element signature="method#Abr#1;class#Abr#0" />
+                <element signature="method#Abr#2;class#Abr#0" />
+                <element signature="method#setChildren#0;class#Abr#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -110,6 +124,25 @@
       <find>1, 3</find>
       <find>1, 2</find>
       <find>X|X|X</find>
+      <find>cou</find>
+      <find>al</find>
+      <find>0, 0)</find>
+      <find>(0, 0</find>
+      <find>(3, 3</find>
+      <find>3, 2</find>
+      <find>3, 1</find>
+      <find>-1</find>
+      <find>case</find>
+      <find>cases</find>
+      <find>eligiœ</find>
+      <find>eligi</find>
+      <find>elig</find>
+      <find>eligble</find>
+      <find>coup</find>
+      <find>bla</find>
+      <find>100</find>
+      <find>plus</find>
+      <find>aff</find>
     </findStrings>
     <replaceStrings>
       <replace>children</replace>
@@ -121,11 +154,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/company/BoardUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Minimax.java" />
+        <option value="$PROJECT_DIR$/src/com/company/test.java" />
         <option value="$PROJECT_DIR$/src/com/company/Action.java" />
-        <option value="$PROJECT_DIR$/src/com/company/ActionScanner.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Minimax.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/company/BoardUtils.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ActionScanner.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Game.java" />
         <option value="$PROJECT_DIR$/src/com/company/Abr.java" />
       </list>
     </option>
@@ -148,22 +183,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tictactoe" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="untitled" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tictactoe" type="616d4139:PackageViewModuleNode" />
-              <item name="com.company" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -188,6 +207,22 @@
               <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="com" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="company" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tictactoe" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="untitled" type="58d84e3e:PackageViewProjectNode" />
+              <item name="tictactoe" type="616d4139:PackageViewModuleNode" />
+              <item name="com.company" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -225,7 +260,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550796657133" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550936806011" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -279,6 +314,8 @@
       <workItem from="1550693626671" duration="314000" />
       <workItem from="1550695054858" duration="1002000" />
       <workItem from="1550750779828" duration="21978000" />
+      <workItem from="1550829988895" duration="13824000" />
+      <workItem from="1550915498082" duration="19283000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1550691871891</created>
@@ -291,32 +328,33 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59812000" />
+    <option name="totallyTimeSpent" value="92919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1299" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1707901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17557861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.57980454" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.08957655" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.048859935" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.752443" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.44299674" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -328,27 +366,27 @@
       <window_info anchor="right" id="Maven" order="8" weight="0.32960895" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1707901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17557861" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.32899022" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.1514658" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.534202" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32899022" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14006515" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.13517915" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Duplicate detector" order="13" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -366,42 +404,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <option name="LAST_COMMIT_MESSAGE" value="init" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Abr.java</url>
-          <line>241</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Abr.java</url>
-          <line>243</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Abr.java</url>
-          <line>245</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Abr.java</url>
-          <line>247</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Abr.java</url>
-          <line>239</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.idea/description.html">
@@ -431,63 +433,76 @@
     <entry file="file://$PROJECT_DIR$/tictactoe.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/BoardUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="40" lean-forward="true" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Minimax.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret column="20" lean-forward="true" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Action.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="60" selection-start-line="24" selection-start-column="60" selection-end-line="24" selection-end-column="60" />
-          <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="282">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/ActionScanner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="247">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/BoardUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <folding>
+            <element signature="method#copyBoard#0;class#BoardUtils#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Action.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          <folding>
+            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#644#645#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Minimax.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="87" selection-start-line="6" selection-start-column="87" selection-end-line="6" selection-end-column="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-322">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1043">
+          <caret line="84" column="18" selection-start-line="84" selection-start-column="18" selection-end-line="84" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Abr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="101" column="30" lean-forward="true" selection-start-line="101" selection-start-column="30" selection-end-line="101" selection-end-column="30" />
+        <state relative-caret-position="422">
+          <caret line="127" column="5" lean-forward="true" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Abr#0;class#Abr#0" />
+            <element signature="method#Abr#1;class#Abr#0" />
             <element signature="method#Abr#2;class#Abr#0" />
-            <element signature="n#!!block;n#hasChildren#0;n#Abr#0" />
             <element signature="method#setChildren#0;class#Abr#0" />
-            <element signature="method#dispAbr#0;class#Abr#0" />
-            <element signature="method#casesEligibles#0;class#Abr#0" />
-            <element signature="method#align#0;class#Abr#0" />
-            <element signature="method#gagne#0;class#Abr#0" />
           </folding>
         </state>
       </provider>
