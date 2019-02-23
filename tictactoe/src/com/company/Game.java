@@ -3,12 +3,13 @@ package com.company;
 import java.util.ArrayList;
 
 public class Game {
-    private int N = 3;
-    private int A = 3;
-    private int depth = 8;
+    private int N = 5;
+    private int A = 4;
+    private int depth = 5;
     private int[][] M;
     private Abr root;
     private ActionScanner actionScanner;
+    private GameUI gameUI;
 
     // Constructeur
     public Game() {
@@ -17,6 +18,22 @@ public class Game {
         BoardUtils.initPosition(M);
         root = new Abr();
         actionScanner = new ActionScanner();
+        gameUI = new GameUI(N);
+        for (int i = 0; i < N; i++)
+            for (int j = 0; j < N; j++)
+                gameUI.addBouton(i, j, N);
+
+
+    }
+
+    private Action waitingForPlayer() {
+        while (gameUI.waiting)
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        return gameUI.getPlayersAction();
     }
 
     /**
@@ -30,7 +47,9 @@ public class Game {
         for (int i = 0; i < N * N / 2 + 1; i++) {
 
             // Demande au joueur d'entrer l'action qu'il veut effectuer et l'effectue
-            coupJoueur = coupJoueur();
+            //coupJoueur = coupJoueur();
+            coupJoueur = waitingForPlayer();
+            BoardUtils.joueurCoup(M, coupJoueur, 1);
 
             // Si le joueur a gagné on sort dela fonction
             if (checkWin(coupJoueur, 1)) return;
@@ -52,6 +71,8 @@ public class Game {
             Action.PLAYED_ACTIONS.add(root.getAction());
             System.out.println("Coup IA : " + root.getAction().toString());
 
+            gameUI.setBouton(root.getAction(), 2);
+
             // Afficher la position courrante
             System.out.println("Current board\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
             BoardUtils.affichePosition(M);
@@ -64,6 +85,7 @@ public class Game {
 
     /**
      * Demande une action au joueur tant que l'action entrée n'est pas valide puis retourel'action validée
+     *
      * @return Action saisie par le joueur
      */
     private Action coupJoueur() {
@@ -77,6 +99,7 @@ public class Game {
     /**
      * Check si le joueur courrant à gagné grâce à sa dernière action.
      * Si un des deux joueur a gagné, affiche un message.
+     *
      * @param action Dernière action du joueur
      * @param joueur Index du joueur
      * @return True s'il y a un vainqeur, false sinon
@@ -90,9 +113,9 @@ public class Game {
     }
 
     /**
-     * @param al Liste du nombre de cases alignées issu de la methode "align"
+     * @param al           Liste du nombre de cases alignées issu de la methode "align"
      * @param nbAlignement Nombre de case à aligner pour gagner
-     * @param joueur Index du joueur
+     * @param joueur       Index du joueur
      * @return L'index du joueur s'il a aligné assez de case, 0 sinon
      */
     public static int gagne(int[] al, int nbAlignement, int joueur) {
@@ -104,15 +127,15 @@ public class Game {
     }
 
     /**
-     * @param P Position
+     * @param P      Position
      * @param joueur Index du joueur
-     * @param x Coordonnée en ordonnée
-     * @param y Coordonnée en abscisse
+     * @param x      Coordonnée en ordonnée
+     * @param y      Coordonnée en abscisse
      * @return Liste du nombre de cases jouées par le même joueur dans l'ordre suivant
-     *          - droite-gauche</br>
-     *          - haut-bas</br>
-     *          - diagonale nord ouest - sud est</br>
-     *          - diagonale nord est - sud ouest</br>
+     * - droite-gauche</br>
+     * - haut-bas</br>
+     * - diagonale nord ouest - sud est</br>
+     * - diagonale nord est - sud ouest</br>
      */
     public static int[] align(int[][] P, int joueur, int x, int y) {
         int dg = 0;
@@ -170,8 +193,8 @@ public class Game {
     }
 
     /**
-     * @param al Liste du nombre de cases alignées issu de la methode "align"
-     * @param isMax True si le joueur est le joueur max, false sinon
+     * @param al           Liste du nombre de cases alignées issu de la methode "align"
+     * @param isMax        True si le joueur est le joueur max, false sinon
      * @param nbAlignement Nombre de case à aligner pour gagner
      * @return 1000 si le joueur max gagne, -1000 s'il perd et 0 sinon
      */
